@@ -41,6 +41,9 @@ select ,button , input{
 		/*width: 30vw;
 		height: 2vw;*/
 		display: block;
+		outline: none;
+		border: none;
+		background: white;
 	}
 select:focus, input:focus, button:focus{
     outline: none;
@@ -82,9 +85,7 @@ select, input, label  {
 		display: block;
 	}
 
-	select:focus, input:focus, button:focus{
-    	outline: none;
-	}	
+	
 	
 
 

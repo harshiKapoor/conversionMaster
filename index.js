@@ -92,7 +92,19 @@ convertButton[0].onclick = function() {
 		resultBox.innerHTML = convertedValue;
 		resultBox.style.background = "yellow";
 		resultBox.style.width = "20vw";
+		setTimeout(goAgain, 1000);	
 
+}
+
+function goAgain() {
+	var cont = confirm("Want to go for another conversion");
+	if (cont == true) {
+		resultBox.innerHTML = " ";
+		
+		convertFromList.value = "from";
+
+		convertToList.value = "to";
+	}
 }
 
 
