@@ -36,10 +36,8 @@ h2 {
 	
 		text-align: center;
 	}
-
+ 
 select ,button , input{
-		/*width: 30vw;
-		height: 2vw;*/
 		display: block;
 		outline: none;
 		border: none;
@@ -70,8 +68,7 @@ select, input, label  {
 @media screen and (min-width: 900px) {
 	
 
-	.items 
-	{
+	.items {
 		width: 15vw;
 		height: 15px;
 		top: 1vw;

@@ -14,21 +14,14 @@ var input = elements['valueToConvert'];
 var convertButton = elements['button'];
 var resultBox = elements['resultBox'];
 
-
-convertFromList.onclick = function() {
-	convertFromList.options[0].style.display = "none";
-}
-
-convertToList.onclick = function() {
-	convertToList.options[0].style.display = "none";
-}
-
 convertFromList.onchange = function() {
 	convertFromValue = convertFromList.options[convertFromList.selectedIndex].value;	
+	convertFromList.options[0].style.display = "none";
 }
 
 convertToList.onchange = function() {
 	convertToValue = convertToList.options[convertToList.selectedIndex].value;
+	convertToList.options[0].style.display = "none";
 }
 
 
@@ -99,11 +92,17 @@ convertButton[0].onclick = function() {
 function goAgain() {
 	var cont = confirm("Want to go for another conversion");
 	if (cont == true) {
-		resultBox.innerHTML = " ";
+
+		resultBox.innerHTML = "";
 		
 		convertFromList.value = "from";
 
 		convertToList.value = "to";
+
+		input.value = " ";
+
+	} else {
+		alert(" no worries , see you next time!")
 	}
 }
 
