@@ -1,0 +1,93 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color: #ffff66;
+	text-align: center;
+}
+
+
+h2 {
+	display: block;
+	color: red;
+
+}
+
+#wrapper {
+		text-align: center;
+		position: relative;
+		margin: 0 auto;
+		background-color: #003366;
+		max-width: 50%;
+		display: inline-block;
+		height: 100vw;
+		top: 10%;
+	}
+
+
+.items {
+		width: 30vw;
+		height: 5vw;
+		padding: 2vw;
+		margin: 20px;
+		display: inline-flex;
+		align-items: center;
+  		background-color: white;
+	
+		text-align: center;
+	}
+
+select ,button , input{
+		/*width: 30vw;
+		height: 2vw;*/
+		display: block;
+	}
+select:focus, input:focus, button:focus{
+    outline: none;
+}
+
+select, input, label  {
+	font-size: 16px;
+}
+
+#convert {
+	font-size: 16px;
+}
+
+#result {
+		font-size: 20px;
+}
+
+::-webkit-input-placeholder { 
+  		font-size: 16px;
+  		font-weight: bold;
+}
+
+
+@media screen and (min-width: 900px) {
+	
+
+	.items 
+	{
+		width: 15vw;
+		height: 15px;
+		top: 1vw;
+		text-align: center;
+		max-width: 50%;
+	}
+
+	select ,button , input{
+		width: 15vw;
+		height: 2vw;
+		display: block;
+	}
+
+	select:focus, input:focus, button:focus{
+    	outline: none;
+	}	
+	
+
+
+
+
+} 

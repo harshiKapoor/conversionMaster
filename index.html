@@ -1,0 +1,41 @@
+<DOCTYPE html!>
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>conversion master</title>
+			<link rel="stylesheet" type="text/css" href="index.css"/>
+		</head>
+		<body>
+			<div id="wrapper">
+				<h2>Conversion Master</h2>
+
+				<div class="items">
+					<select id="convertFrom">
+						<option selected="selected">from</option>
+  						<option value="meters">meters</option>
+ 						<option value="inch">inch</option>
+ 						<option value="centimeters">centimeters</option>
+ 						<option value="millimeters">millimeters</option>
+					</select>
+				</div>
+				<div class="items">
+					<select id="convertTo">
+						<option selected="selected">to</option>
+  						<option value="meters">meters</option>
+ 						<option value="inch">inch</option>
+ 						<option value="centimeters">centimeters</option>
+ 						<option value="millimeters">millimeters</option>
+					</select>
+				</div>
+				<div class="items">
+					<input type="text" placeholder="value" id="value" name="value">
+				</div>
+					<div class="items"><label id="result"></label>
+				</div>
+				<div class="items">
+					<button id="convert">Click To Convert</button>
+				</div>
+			</div>
+				<script src="index.js"></script>
+		</body>
+	</html>
